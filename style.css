@@ -1,0 +1,205 @@
+@import url('https://fonts.google.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca:wght@400&display=swap'); 
+
+.link{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+nav{
+    background: rgb(63, 8, 8);
+}
+nav ul{
+    list-style-type: none;
+    padding: 0
+}
+nav ul li a{
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    display: block;
+    padding:10px;
+}
+nav ul li a:hover{
+    background-color: #555
+}
+@media screen and (min-width: 375px){
+    nav ul{
+        display: flex;
+        justify-content: flex-start;
+    }
+    nav ul li{
+        width:160px;
+    }
+}
+
+/*Flexbox style*/
+body .index{
+    width: 100%;
+    background-color: hsl(0, 0%, 95%);
+    /*width: 100%;*/
+    /*font-size: 15px;*/
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.box-container{
+    width: 100%;
+    padding: 50px;
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+}
+
+.box{
+    width: 269px;
+    padding: 15px;
+    min-height: 430px;
+}
+h1{
+    color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca' sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Big Shoulders Display', cursive;
+    margin: 25px 0 60px 0;
+    /*font-weight: 400;*/
+    /*line-height: 1.8;*/
+    font-size: 15px;
+}
+
+.sedan{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.suvs{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.cont{
+    padding: 10px ;
+}
+
+.cont img{
+    width: 80px;  
+}
+.cont h1{
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+    font-family: 'Lexend Deca', sans-serif;
+    margin: 20px 0;
+}
+.cont p{
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.7;
+    font-family: 'Big Shoulders Display' cursive;
+}
+button{
+    border: 0;
+    margin: 60px 0;
+    padding: 15px 40px;
+    background-color: hsl(0, 0%, 95%);
+    outline: none;
+    border-radius: 30px;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 700;
+}
+
+/*in active state; the buttons have an hover style*/
+.sedan .Learn{
+    color: hsl(31, 77%, 52%);
+}
+
+.sedan .Learn:hover{
+    background-color: hsl(31, 77%, 52%);
+    color: #fff;
+    border: 1px solid #fff;
+    transition: all 0.2s ease-in-out;
+}
+
+.suvs .Learn{
+    color: hsl(184, 100%, 22%);
+}
+.suvs .Learn:hover{
+    background-color: hsl(184, 100%, 22%);
+    color: #fff;
+    border: 1px solid #fff;
+    transition: all 0.2s ease-in-out;
+}
+
+.luxury .Learn{
+    color: hsl(179, 100%, 13%);
+}
+
+.luxury .Learn:hover{
+    background-color: hsl(179, 100%, 13%);
+    color: #fff;
+    border: 1px solid #fff;
+    transition: all 0.2s ease-in-out;
+}
+
+/*The designs were created to the following widths:
+- Desktop: 1440px and when in - Mobile view: 375px (designs display in columns)
+
+
+/*Grid styles*/
+body.grid{
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    place-items: center;
+    min-height: 100vh;
+}
+
+main{
+    display: grid;
+    grid-template-areas:
+    'a a a\ b'  
+    'c c d d'
+    'c c e e' ;
+    grid-template-rows: 200px;
+    gap: 10px;
+    width: 45%;
+    margin: 0 auto;
+}
+    
+main div{
+    padding: 3em;
+}
+.item-a{
+    background-color:  #EB5020;
+    grid-area: a;
+}
+.item-b{
+    background-color:  #FCA201;
+    grid-area: b;
+}
+.item-c{
+    background-color: #05AA42;
+    grid-area: c;
+}
+.item-d{
+    background-color:  #01AEFD;
+    grid-area: d;
+}
+.item-e{
+    background-color:  #1e90ff;
+    grid-area: e;
+}
