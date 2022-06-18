@@ -6,7 +6,7 @@
     margin: 0 auto;
 }
 nav{
-    background: rgb(63, 8, 8);
+    background: rgb(85, 168, 241);
 }
 nav ul{
     list-style-type: none;
@@ -160,6 +160,8 @@ button{
 - Desktop: 1440px and when in - Mobile view: 375px (designs display in columns)
 
 
+
+
 /*Grid styles*/
 body.grid{
     background-color: hsl(0, 0%, 95%);
@@ -171,7 +173,7 @@ body.grid{
 main{
     display: grid;
     grid-template-areas:
-    'a a a\ b'  
+    'a a a b'  
     'c c d d'
     'c c e e' ;
     grid-template-rows: 200px;
